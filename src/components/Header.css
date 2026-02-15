@@ -1,0 +1,40 @@
+.header-container {
+  background-color: #1a1a1a; /* Un gris casi negro muy elegante */
+  color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid #d35400; /* Línea naranja tipo "motor" */
+}
+
+.header-logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-family: 'Verdana', sans-serif;
+  letter-spacing: 2px;
+}
+
+.header-logo span {
+  color: #d35400; /* Color naranja para resaltar "Repuestos" */
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover {
+  color: #d35400;
+}

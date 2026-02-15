@@ -1,0 +1,41 @@
+/* Limpieza básica y fuentes */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff; /* Un gris muy claro para que resalten las tarjetas */
+  color: #333;
+}
+
+/* Contenedor principal de la App */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que la página ocupe todo el alto */
+}
+
+/* Estilo para el área de contenido (main) */
+main {
+  /* En lugar de width: 90%, usamos fit-content */
+  width: fit-content; 
+  
+  /* Esto centra el recuadro aunque sea pequeño */
+  margin: 40px auto; 
+  
+  /* Mantenemos tus estilos de diseño */
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  
+  /* Opcional: un ancho máximo para que no se pegue a los bordes en pantallas chicas */
+  max-width: 95%; 
+}
+
+/* Títulos de sección */
+h1, h2 {
+  color: #1a1a1a;
+  border-left: 5px solid #d35400; /* Detalle naranja al lado de los títulos */
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
