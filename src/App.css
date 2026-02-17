@@ -20,7 +20,7 @@ main {
   width: fit-content; 
   
   /* Esto centra el recuadro aunque sea pequeño */
-  margin: 40px auto; 
+  margin: 10px auto; 
   
   /* Mantenemos tus estilos de diseño */
   padding: 30px;
@@ -29,12 +29,12 @@ main {
   border-radius: 12px;
   
   /* Opcional: un ancho máximo para que no se pegue a los bordes en pantallas chicas */
-  max-width: 95%; 
+  max-width: 966%; 
 }
 
 /* Títulos de sección */
 h1, h2 {
-  color: #1a1a1a;
+  color: #030303;
   border-left: 5px solid #d35400; /* Detalle naranja al lado de los títulos */
   padding-left: 15px;
   margin-bottom: 30px;

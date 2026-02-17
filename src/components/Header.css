@@ -1,7 +1,7 @@
 .header-container {
   background-color: #1a1a1a; /* Un gris casi negro muy elegante */
   color: #ffffff;
-  padding: 1rem 2rem;
+  padding: 0.9rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +14,7 @@
   font-size: 1.8rem;
   font-family: 'Verdana', sans-serif;
   letter-spacing: 2px;
+  color: #ffffff;
 }
 
 .header-logo span {
