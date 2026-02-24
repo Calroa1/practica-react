@@ -1,25 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import ListaMarcas from './components/ListasMarcas';
+import ListaMarca from './components/ListasMarca';
+import ListaRepuesto from './components/ListaRepuesto';
 import ListaModelos from './components/ListaModelos';
-import ListaRepuestos from './components/ListaRepuestos';
+ // Asegúrate que el nombre del archivo sea ListasMarca.jsx
 
 function App() {
-  // 1. ESTADOS (Siempre al principio)
-  const [seleccion, setSeleccion] = useState({ id: null, nombre: "" });
-  const [modeloSeleccionadoId, setModeloSeleccionadoId] = useState(null);
-
-  // 2. FUNCIONES DE MANEJO
-  function manejarSeleccionMarca(id, nombre) {
-    setSeleccion({ id: id, nombre: nombre });
-    // Limpiamos el modelo anterior si el usuario cambia de marca
-    setModeloSeleccionadoId(null);
-  }
-
-  function manejarSeleccionModelo(id) {
-    setModeloSeleccionadoId(id);
-  }
+  // Por ahora, como solo queremos ver las marcas, 
+  // no necesitamos estados ni funciones de manejo aquí.
 
   return (
     <div className="App">
@@ -27,17 +16,18 @@ function App() {
       
       <main>
         {/* Paso 1: Seleccionar Marca */}
-        <ListaMarcas alSeleccionar={manejarSeleccionMarca} />
+        {/* Solo dejamos este componente activo */}
+        <ListaMarca />
+        <hr/>
 
-        {/* Paso 2: Mostrar modelos de esa marca */}
-        <ListaModelos
-          marcaId={seleccion.id}
-          nombreMarca={seleccion.nombre}
-          alSeleccionarModelo={manejarSeleccionModelo} 
-        />
+        <ListaModelos/>
+        <hr/>
+        <ListaRepuesto/>
 
-        {/* Paso 3: Mostrar repuestos de ese modelo */}
-        <ListaRepuestos modeloId={modeloSeleccionadoId} />
+        {/* Paso 2 y 3: Los mantenemos comentados para que no den error */}
+        {/* <ListaModelos /> 
+          <ListaRepuestos /> 
+        */}
       </main>
 
       <footer style={{ textAlign: 'center', padding: '20px', color: '#888' }}>

@@ -1,0 +1,66 @@
+/* Contenedor de la grilla (pon esto en el componente padre si puedes) */
+.contenedor-marcas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* La Tarjeta Individual */
+.tarjeta-marca {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    aspect-ratio: 1 / 1; /* Hace que la tarjeta sea cuadrada */
+}
+
+.tarjeta-marca:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-color: #3b82f6;
+}
+
+/* El Título de la marca */
+.titulo-marca {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* LA IMAGEN: Aquí es donde controlamos el tamaño */
+.imagen-marca {
+    width: 100%;
+    height: 80px;      /* Altura fija para que todas sean iguales */
+    object-fit: contain; /* Evita que el logo se estire o se corte */
+    filter: grayscale(20%); /* Opcional: un toque estético */
+    transition: filter 0.3s ease;
+}
+
+.tarjeta-marca:hover .imagen-marca {
+    filter: grayscale(0%);
+}
+
+/* Estilo para cuando no hay imagen */
+.sin-imagen {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    color: #999;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+}

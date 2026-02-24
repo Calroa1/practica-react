@@ -1,0 +1,59 @@
+/* Estilo de la tarjeta individual */
+.moto-card {
+    width: 260px; /* Tamaño fijo de ancho para todas */
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden; /* Corta lo que se salga de los bordes redondeados */
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.moto-card:hover {
+    transform: translateY(-5px); /* Pequeña animación al pasar el mouse */
+}
+
+/* El secreto: Contenedor de imagen con altura fija */
+.moto-card-image {
+    width: 100%;
+    height: 160px; /* Todas las fotos medirán 160px de alto */
+    background-color: #f5f5f5;
+}
+
+.moto-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la foto al cuadro sin deformarla */
+}
+
+/* Espaciado interno de los textos */
+.moto-card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.moto-title {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.moto-brand {
+    color: #888;
+    font-size: 0.85rem;
+    margin: 8px 0;
+}
+
+.moto-btn {
+    width: 100%;
+    padding: 8px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
